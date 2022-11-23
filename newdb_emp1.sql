@@ -25,6 +25,24 @@ update emp_trainee set Designation='IT_Specialist';
 update emp1 set Skills='python' where Designation='Manager';
 select * from emp1,emp_trainee;
 
+#and
+select * from emp1 where Designation='manager' and ID_Name='rohit';
+#or
+select * from emp1 where Designation='manager' or ID_Name='rohit';
+#not
+select * from emp1 where Designation!='manager';
+#in means when we search in the same column
+select * from emp1 where Designation in ('manager', 'ytrfg');
+
+#starts with
+
+select * from emp1 where ID_Name like 's%';
+
+#ends with
+select * from emp1 where ID_Name like '%t';
+
+
+
 
 
 
