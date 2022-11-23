@@ -41,6 +41,18 @@ select * from emp1 where ID_Name like 's%';
 #ends with
 select * from emp1 where ID_Name like '%t';
 
+#contain specified letter
+select * from emp1 where ID_Name like '%a%';
+
+#starts and ends with 
+select * from emp1 where ID_Name like 'a%o';
+
+#missing letters
+
+select * from emp1 where designation like 'man_ger';
+
+
+
 
 
 
