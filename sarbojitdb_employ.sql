@@ -1,10 +1,4 @@
 
--- Table structure for table `employ`
---
-
-DROP TABLE IF EXISTS `employ`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `employ` (
   `eId` int NOT NULL,
   `eName` varchar(45) NOT NULL,
@@ -12,7 +6,7 @@ CREATE TABLE `employ` (
   `eDept` varchar(45) DEFAULT NULL,
   `eBatch` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`eId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+)
 
 
  alter table employ MODIFY squalification varchar(20) not null;
